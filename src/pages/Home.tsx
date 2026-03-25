@@ -51,26 +51,54 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features / Why Chef's Cafe */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-5xl font-bold text-brand-primary mb-6">The Chef’s Experience</h2>
-          <p className="text-brand-primary/70 max-w-2xl mx-auto text-lg leading-relaxed">
-            We don’t just serve coffee; we plate experiences. Every dish is a balance of flavor and craft.
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <div key={index} className="text-center p-10 bg-white shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-brand-accent">
-              <div className="inline-block p-4 bg-brand-base rounded-full mb-6">
-                {feature.icon}
+      {/* Signature Dishes Spotlight (Option A) */}
+      <section className="py-24 bg-brand-light">
+          <div className="max-w-7xl mx-auto px-4 md:px-8">
+              <div className="text-center mb-20">
+                    <span className="text-brand-accent uppercase tracking-[0.2em] text-sm font-bold">Our Craft</span>
+                    <h2 className="font-serif text-5xl md:text-6xl text-brand-primary mt-3">Signature Selections</h2>
               </div>
-              <h3 className="font-serif text-2xl font-bold text-brand-primary mb-4">{feature.title}</h3>
-              <p className="text-brand-primary/80 leading-relaxed font-light">{feature.description}</p>
-            </div>
-          ))}
-        </div>
+              
+              {/* Item 1: Cream Puffs (Image Left) */}
+              <div className="flex flex-col md:flex-row items-center gap-12 mb-24">
+                  <div className="w-full md:w-1/2 relative group overflow-hidden rounded-sm shadow-xl aspect-sqaure md:aspect-[4/3]">
+                      <img 
+                          src="https://images.unsplash.com/photo-1626803775151-61d756412f56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                          alt="Signature Cream Puffs" 
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                  </div>
+                  <div className="w-full md:w-1/2 md:pl-10 text-center md:text-left">
+                      <h3 className="font-serif text-4xl text-brand-primary mb-4">The Famous Cream Puff</h3>
+                      <p className="text-brand-primary/70 text-lg leading-relaxed mb-6 font-light">
+                          Crisp, golden choux pastry filled generously with our signature vanilla bean custard. 
+                          Ideally balanced sweetness with a cloud-like texture that melts in your mouth.
+                      </p>
+                      <span className="uppercase tracking-widest text-sm border-b border-brand-accent pb-1 inline-block">Best Seller</span>
+                  </div>
+              </div>
+
+              {/* Item 2: Brunch Plate (Image Right) */}
+              <div className="flex flex-col md:flex-row-reverse items-center gap-12">
+                  <div className="w-full md:w-1/2 relative group overflow-hidden rounded-sm shadow-xl aspect-sqaure md:aspect-[4/3]">
+                      <img 
+                          src="https://images.unsplash.com/photo-1544025162-d76690b67f11?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                          alt="Premium Rib-eye Salpicao" 
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                  </div>
+                  <div className="w-full md:w-1/2 md:pr-10 text-center md:text-left">
+                      <h3 className="font-serif text-4xl text-brand-primary mb-4">Rib-eye Salpicao</h3>
+                      <p className="text-brand-primary/70 text-lg leading-relaxed mb-6 font-light">
+                          Tender cubes of premium rib-eye, seared to perfection in garlic-infused olive oil and 
+                          finished with our house-blend seasoning. Served with garlic rice for the ultimate comfort meal.
+                      </p>
+                      <Link to="/menu" className="bg-transparent border border-brand-primary text-brand-primary px-8 py-3 hover:bg-brand-primary hover:text-white transition-all uppercase tracking-widest text-sm font-semibold">
+                          Explore Menu
+                      </Link>
+                  </div>
+              </div>
+          </div>
       </section>
 
       {/* Location & Payment Stripe */}

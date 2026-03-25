@@ -9,21 +9,21 @@ export default function Hero() {
         <img 
           src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=2070&auto=format&fit=crop" 
           alt="Chef’s Café Gourmet Brunch Spread" 
-          className="w-full h-full object-cover opacity-80"
+          className="w-full h-full object-cover opacity-80 animate-slow-zoom"
         />
-        <div className="absolute inset-0 bg-brand-dark/40 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-brand-dark/50 mix-blend-multiply" />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-base via-transparent to-transparent opacity-90" />
       </div>
 
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg leading-tight tracking-tight">
-          Your gourmet brunch &<br/>pastry haven in Calasiao
+        <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg leading-tight tracking-tight animate-fade-in-up">
+          Where every brunch<br/>feels like a reward.
         </h1>
-        <p className="font-sans text-lg md:text-xl text-brand-cream/90 mb-10 font-light drop-shadow-md tracking-wide max-w-3xl mx-auto">
+        <p className="font-sans text-lg md:text-xl text-brand-cream/90 mb-10 font-light drop-shadow-md tracking-wide max-w-3xl mx-auto animate-fade-in-up-delay">
           Averin Strip Bldg – Old De Venecia Hwy • Open daily 11 AM–9:30 PM (Fri/Sat until 10:30 PM)
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up-delay">
           <Link 
             to="/menu" 
             className="group bg-brand-accent text-white px-8 py-3 rounded-sm hover:bg-white hover:text-brand-primary transition-all duration-300 font-semibold uppercase tracking-wider text-sm shadow-xl flex items-center gap-2 border border-brand-accent hover:border-white w-full sm:w-auto justify-center"

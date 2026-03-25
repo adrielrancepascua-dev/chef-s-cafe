@@ -9,3 +9,26 @@
     @apply font-serif;
   }
 }
+
+@layer utilities {
+  .animate-slow-zoom {
+    animation: slow-zoom 20s ease-in-out infinite alternate;
+  }
+  .animate-fade-in-up {
+    animation: fade-in-up 1s ease-out forwards;
+  }
+  .animate-fade-in-up-delay {
+    animation: fade-in-up 1s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+}
+
+@keyframes slow-zoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

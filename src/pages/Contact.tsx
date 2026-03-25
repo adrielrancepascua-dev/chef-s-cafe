@@ -50,8 +50,8 @@ export default function Contact() {
                 <div>
                     <h3 className="font-bold text-brand-dark mb-2">Connect & Order</h3>
                     <div className="flex gap-4 mb-4">
-                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="text-brand-brown hover:text-brand-accent transition-colors font-medium underline">Facebook</a>
-                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="text-brand-brown hover:text-brand-accent transition-colors font-medium underline">Instagram</a>
+                        <a href="https://www.facebook.com/chefscafe2025" target="_blank" rel="noreferrer" className="text-brand-brown hover:text-brand-accent transition-colors font-medium underline">Facebook</a>
+                        <a href="https://www.instagram.com/chefs.cafeph/" target="_blank" rel="noreferrer" className="text-brand-brown hover:text-brand-accent transition-colors font-medium underline">Instagram</a>
                     </div>
                     <a 
                         href="https://www.foodpanda.ph/restaurant/wnaf/chefs-cafe-banaoang" 

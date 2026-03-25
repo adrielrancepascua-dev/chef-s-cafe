@@ -15,8 +15,8 @@ export default function Footer() {
             <div className="flex flex-col space-y-4">
               <span className="text-brand-accent text-sm font-bold uppercase tracking-wider">Follow our journey</span>
               <div className="flex gap-4">
-                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="text-brand-base hover:text-brand-accent transition-colors">Facebook</a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="text-brand-base hover:text-brand-accent transition-colors">Instagram</a>
+                <a href="https://www.facebook.com/chefscafe2025" target="_blank" rel="noreferrer" className="text-brand-base hover:text-brand-accent transition-colors">Facebook</a>
+                <a href="https://www.instagram.com/chefs.cafeph/" target="_blank" rel="noreferrer" className="text-brand-base hover:text-brand-accent transition-colors">Instagram</a>
               </div>
               <div className="mt-4 pt-4 border-t border-brand-accent/20">
                  <p className="text-brand-base/60 text-xs uppercase tracking-widest mb-2">Accepted Payments</p>

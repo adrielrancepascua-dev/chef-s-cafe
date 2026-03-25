@@ -45,10 +45,27 @@ export default function Contact() {
                   <p className="text-brand-dark/70">0938 721 5527</p>
                 </div>
               </div>
-              
-              <div className="pt-8 border-t border-brand-beige/30">
-                <h3 className="font-bold text-brand-dark mb-2">Payment Methods</h3>
-                <p className="text-brand-dark/70">We accept Cash, GCash, Bank Transfer, Debit & Credit Cards.</p>
+
+              <div className="pt-6 border-t border-brand-beige/30 space-y-4">
+                <div>
+                    <h3 className="font-bold text-brand-dark mb-2">Connect & Order</h3>
+                    <div className="flex gap-4 mb-4">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="text-brand-brown hover:text-brand-accent transition-colors font-medium underline">Facebook</a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="text-brand-brown hover:text-brand-accent transition-colors font-medium underline">Instagram</a>
+                    </div>
+                    <a 
+                        href="https://www.foodpanda.ph/restaurant/wnaf/chefs-cafe-banaoang" 
+                        target="_blank" 
+                        rel="noreferrer"
+                        className="inline-block bg-[#D70F64] text-white px-6 py-2 rounded-full font-bold hover:bg-[#b00c50] transition-colors"
+                    >
+                        Order on Foodpanda
+                    </a>
+                </div>
+                <div>
+                    <h3 className="font-bold text-brand-dark mb-2">Payment Methods</h3>
+                    <p className="text-brand-dark/70">Cash, Card, GCash</p>
+                </div>
               </div>
             </div>
           </div>
@@ -93,9 +110,9 @@ export default function Contact() {
         {/* Map */}
         <div className="mt-12 rounded-xl overflow-hidden shadow-sm border border-brand-beige h-[400px]">
            <iframe 
-             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.279768600863!2d120.3497893148679!3d16.020584988909848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339167b578550133%3A0x1d3326177b96677!2sBanaoang%2C%20Calasiao%2C%20Pangasinan!5e0!3m2!1sen!2sph!4v1620000000000!5m2!1sen!2sph" 
              width="100%" 
              height="100%" 
+             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Averin%20Strip%20Building%20Old%20De%20Venecia%20Highway%20Banaoang%20Calasiao+(Chef's%20Cafe)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
              style={{ border: 0 }} 
              allowFullScreen 
              loading="lazy" 

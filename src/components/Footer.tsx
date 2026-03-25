@@ -9,11 +9,19 @@ export default function Footer() {
           {/* Brand & About */}
           <div>
             <h3 className="font-serif text-3xl font-bold mb-4 text-brand-base">Chef’s Café</h3>
-            <p className="text-brand-base/80 mb-6 leading-relaxed font-light">
-               Fresh pastries, handcrafted coffee, and all-day brunch in Calasiao. A culinary haven for those who appreciate quality.
+            <p className="text-brand-base/80 mb-6 leading-relaxed font-light italic">
+               "Freshly baked, richly brewed, made to crave."
             </p>
-            <div className="flex space-x-4">
+            <div className="flex flex-col space-y-4">
               <span className="text-brand-accent text-sm font-bold uppercase tracking-wider">Follow our journey</span>
+              <div className="flex gap-4">
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="text-brand-base hover:text-brand-accent transition-colors">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="text-brand-base hover:text-brand-accent transition-colors">Instagram</a>
+              </div>
+              <div className="mt-4 pt-4 border-t border-brand-accent/20">
+                 <p className="text-brand-base/60 text-xs uppercase tracking-widest mb-2">Accepted Payments</p>
+                 <p className="text-brand-base/90 text-sm font-light">Cash • Card • GCash</p>
+              </div>
             </div>
           </div>
 

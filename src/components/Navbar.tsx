@@ -39,10 +39,10 @@ export default function Navbar() {
               </NavLink>
             ))}
             <a 
-              href="https://www.foodpanda.ph/" 
+              href="https://www.foodpanda.ph/restaurant/wnaf/chefs-cafe-banaoang" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-brand-brown text-white px-4 py-2 rounded-full hover:bg-brand-accent transition-colors text-sm font-medium"
+              className="bg-brand-brown text-white px-4 py-3 rounded-full hover:bg-brand-accent transition-colors text-sm font-medium"
             >
               Order Online
             </a>
@@ -78,7 +78,7 @@ export default function Navbar() {
               </NavLink>
             ))}
             <a 
-              href="https://www.foodpanda.ph/restaurant/lpee/stay-awhile-cafe-and-bakery" 
+              href="https://www.foodpanda.ph/restaurant/wnaf/chefs-cafe-banaoang" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block w-full text-center mt-4 bg-brand-brown text-white px-4 py-3 rounded-md hover:bg-brand-accent transition-colors font-medium"

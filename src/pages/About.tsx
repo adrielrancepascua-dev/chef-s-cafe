@@ -21,10 +21,10 @@ export default function About() {
         <div className="prose prose-lg prose-headings:font-serif prose-headings:text-brand-primary prose-p:text-brand-primary/80 prose-p:leading-relaxed prose-p:font-light mx-auto">
           <h2>More Than Just Coffee</h2>
           <p>
-            Chef’s Café was built for those who crave more than the usual. We are a culinary destination in Banaoang, Calasiao, dedicated to the art of brunch and bacterial baking. Our philosophy is simple: <strong>make it fresh, make it rich, make it memorable.</strong>
+            Chef’s Café is a newly opened foodie destination in Banaoang, Calasiao, dedicated to the art of handcrafted brunch plates, delicate cream puffs, warm cinnamon rolls, and hand-brewed coffee. Our philosophy is simple: <strong>make it fresh, make it rich, make it memorable.</strong>
           </p>
           <p>
-            We believe that a great morning starts with a plate that looks as good as it tastes. From the golden flake of our croissants to the rich aroma of our single-origin pour-overs, every detail is curated to offer a premium, indulgent experience.
+            We believe that a great morning starts with a plate that looks as good as it tastes. From the golden flake of our pastries to the rich aroma of our single-origin pour-overs, every detail is curated to offer a premium, indulgent experience.
           </p>
           
           <div className="my-16 grid grid-cols-2 gap-8">

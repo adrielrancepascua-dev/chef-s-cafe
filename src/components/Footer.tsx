@@ -2,71 +2,64 @@ import { MapPin, Phone, Clock } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-dark text-brand-light pt-16 pb-8 font-sans">
+    <footer className="bg-brand-primary text-brand-base pt-24 pb-12 font-sans border-t border-brand-accent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           
           {/* Brand & About */}
           <div>
-            <h3 className="font-serif text-2xl font-bold mb-4 text-brand-beige">Stay Awhile</h3>
-            <p className="text-brand-beige/80 mb-6 leading-relaxed">
-              Your cozy neighborhood café in Dagupan. A place for productive mornings, 
-              lazy afternoons, and sweet moments.
+            <h3 className="font-serif text-3xl font-bold mb-4 text-brand-base">Chef’s Café</h3>
+            <p className="text-brand-base/80 mb-6 leading-relaxed font-light">
+               Fresh pastries, handcrafted coffee, and all-day brunch in Calasiao. A culinary haven for those who appreciate quality.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-brand-beige/80 hover:text-white transition-colors">
-                <span className="font-bold">IG</span>
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=61579230243848" target="_blank" rel="noopener noreferrer" className="text-brand-beige/80 hover:text-white transition-colors">
-                 <span className="font-bold">FB</span>
-              </a>
+              <span className="text-brand-accent text-sm font-bold uppercase tracking-wider">Follow our journey</span>
             </div>
           </div>
 
           {/* Quick Info */}
           <div>
-            <h4 className="font-serif text-lg font-bold mb-4 text-brand-beige">Visit Us</h4>
-            <ul className="space-y-4 text-brand-beige/80">
+            <h4 className="font-sans text-sm font-bold uppercase tracking-widest mb-6 text-brand-accent">Visit Us</h4>
+            <ul className="space-y-4 text-brand-base/80 font-light text-sm">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                <span>Coastway Complex, Arellano Street,<br/>Dagupan City, Pangasinan</span>
+                <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 text-brand-accent" />
+                <span>Averin Strip Building,<br/>Old De Venecia Highway, Banaoang,<br/>Calasiao, Pangasinan</span>
               </li>
               <li className="flex items-start gap-3">
-                <Clock className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                <span>Daily: 9:00 AM – 10:00 PM</span>
+                <Clock className="h-5 w-5 mt-0.5 flex-shrink-0 text-brand-accent" />
+                <div className="flex flex-col">
+                  <span>Mon–Thu & Sun: 11 AM–9:30 PM</span>
+                  <span>Fri–Sat: 11 AM–10:30 PM</span>
+                </div>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 flex-shrink-0" />
-                <span>Available for Inquiries</span>
+                <Phone className="h-5 w-5 flex-shrink-0 text-brand-accent" />
+                <span>0938 721 5527</span>
               </li>
             </ul>
           </div>
 
           {/* Newsletter / Links */}
           <div>
-            <h4 className="font-serif text-lg font-bold mb-4 text-brand-beige">Stay Updated</h4>
-            <p className="text-brand-beige/80 mb-4">
-              Join our community for updates on seasonal cakes and events.
+            <h4 className="font-sans text-sm font-bold uppercase tracking-widest mb-6 text-brand-accent">Stay Updated</h4>
+            <p className="text-brand-base/80 mb-4 font-light">
+              Receive updates on seasonal specials and gourmet events.
             </p>
-            <form className="flex flex-col gap-2">
+            <form className="flex flex-col gap-3">
               <input 
                 type="email" 
                 placeholder="Enter your email" 
-                className="bg-brand-brown/30 border border-brand-beige/20 rounded px-4 py-2 text-brand-light placeholder:text-brand-beige/40 focus:outline-none focus:border-brand-beige"
+                className="bg-brand-primary/50 border border-brand-accent/30 rounded-sm px-4 py-3 text-brand-base placeholder:text-brand-base/30 focus:outline-none focus:border-brand-accent"
               />
-              <button className="bg-brand-beige text-brand-dark px-4 py-2 rounded hover:bg-white transition-colors font-medium">
+              <button className="bg-brand-accent text-brand-primary px-4 py-3 rounded-sm hover:bg-brand-base transition-colors font-bold uppercase tracking-wider text-sm">
                 Subscribe
               </button>
             </form>
-            <div className="mt-8 pt-6 border-t border-brand-beige/10">
-              <p className="text-sm text-brand-beige/60">We accept:</p>
-              <p className="text-brand-beige/80 font-medium">Cash • GCash • Cards</p>
-            </div>
           </div>
         </div>
         
-        <div className="border-t border-brand-beige/10 mt-12 pt-8 text-center text-brand-beige/40 text-sm">
-          <p>&copy; {new Date().getFullYear()} Stay Awhile Café & Bakery. All rights reserved.</p>
+        <div className="border-t border-brand-base/10 mt-16 pt-8 text-center text-brand-base/40 text-xs uppercase tracking-widest">
+          <p>&copy; {new Date().getFullYear()} Chef’s Café. All rights reserved.</p>
         </div>
       </div>
     </footer>

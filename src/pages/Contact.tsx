@@ -1,4 +1,4 @@
-import { MapPin, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Clock } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -21,8 +21,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-brand-dark">Visit Us</h3>
-                  <p className="text-brand-dark/70">Coastway Complex, Arellano Street,<br/>Dagupan City, Pangasinan</p>
-                  <p className="text-sm text-brand-dark/50 mt-1">Near St. Robert Bellarmine Center</p>
+                  <p className="text-brand-dark/70">Averin Strip Building,<br/>Old De Venecia Highway,<br/>Banaoang, Calasiao, Pangasinan</p>
                 </div>
               </div>
 
@@ -32,18 +31,18 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-brand-dark">Business Hours</h3>
-                  <p className="text-brand-dark/70">Daily: 9:00 AM – 10:00 PM</p>
-                  <p className="text-sm text-brand-dark/50 mt-1">Delivery via Foodpanda: 9:00 AM – 9:45 PM</p>
+                  <p className="text-brand-dark/70">Mon–Thu & Sun: 11 AM–9:30 PM</p>
+                  <p className="text-brand-dark/70">Fri–Sat: 11 AM–10:30 PM</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="bg-brand-beige/50 p-3 rounded-full">
-                  <Mail className="h-6 w-6 text-brand-brown" />
+                  <Phone className="h-6 w-6 text-brand-brown" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-brand-dark">Email Us</h3>
-                  <p className="text-brand-dark/70">hello@stayawhileph.com</p>
+                  <h3 className="font-bold text-brand-dark">Call Us</h3>
+                  <p className="text-brand-dark/70">0938 721 5527</p>
                 </div>
               </div>
               
@@ -94,13 +93,13 @@ export default function Contact() {
         {/* Map */}
         <div className="mt-12 rounded-xl overflow-hidden shadow-sm border border-brand-beige h-[400px]">
            <iframe 
-             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1916.123456!2d120.345678!3d16.046123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDAyJzQ2LjAiTiAxMjDCsDIwJzUwLjAiRQ!5e0!3m2!1sen!2sph!4v1600000000000!5m2!1sen!2sph" 
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.279768600863!2d120.3497893148679!3d16.020584988909848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339167b578550133%3A0x1d3326177b96677!2sBanaoang%2C%20Calasiao%2C%20Pangasinan!5e0!3m2!1sen!2sph!4v1620000000000!5m2!1sen!2sph" 
              width="100%" 
              height="100%" 
              style={{ border: 0 }} 
              allowFullScreen 
              loading="lazy" 
-             title="Stay Awhile Location"
+             title="Chef's Cafe Location"
            ></iframe>
         </div>
       </div>

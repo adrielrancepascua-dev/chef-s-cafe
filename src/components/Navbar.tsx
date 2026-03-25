@@ -20,7 +20,7 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center gap-2">
             <Link to="/" className="flex items-center gap-2">
               <Coffee className="h-8 w-8 text-brand-brown" />
-              <span className="font-serif text-2xl font-bold text-brand-dark">Stay Awhile</span>
+              <span className="font-serif text-2xl font-bold text-brand-dark">Chef’s Café</span>
             </Link>
           </div>
           
@@ -39,7 +39,7 @@ export default function Navbar() {
               </NavLink>
             ))}
             <a 
-              href="https://www.foodpanda.ph/restaurant/lpee/stay-awhile-cafe-and-bakery" 
+              href="https://www.foodpanda.ph/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-brand-brown text-white px-4 py-2 rounded-full hover:bg-brand-accent transition-colors text-sm font-medium"

@@ -1,26 +1,8 @@
 import Hero from '../components/Hero';
-import { Coffee, Cake, Utensils, Star, MapPin, Clock, CreditCard } from 'lucide-react';
+import { Star, MapPin, Clock, CreditCard } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
-  const features = [
-    {
-      icon: <Coffee className="h-8 w-8 text-brand-primary" />,
-      title: "Hand-Brewed Coffee",
-      description: "Rich espresso blends and single-origin pour-overs, crafted for the true coffee lover."
-    },
-    {
-      icon: <Cake className="h-8 w-8 text-brand-primary" />,
-      title: "Signature Pastries",
-      description: "Our famous Cream Puffs and Cinnamon Rolls, baked fresh daily in our kitchen."
-    },
-    {
-      icon: <Utensils className="h-8 w-8 text-brand-primary" />,
-      title: "All-Day Brunch",
-      description: "Indulge in gourmet brunch plates, from savory classics to sweet temptations."
-    }
-  ];
-
   return (
     <div className="flex flex-col min-h-screen font-sans bg-brand-base text-brand-primary">
       <Hero />

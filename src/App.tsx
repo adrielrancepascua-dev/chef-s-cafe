@@ -5,8 +5,45 @@ import About from './pages/About';
 import Menu from './pages/Menu';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import { useEffect } from 'react';
 
 function App() {
+  // Protection against casual copying
+  useEffect(() => {
+    const handleContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
+        (e.ctrlKey && e.key === 'u')
+      ) {
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener('keydown', handleKeyDown);
+
+    // Console warning for developers
+    console.log(
+      '%cStop!',
+      'color: red; font-size: 50px; font-weight: bold; text-shadow: 2px 2px black;'
+    );
+    console.log(
+      '%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable a feature or "hack" someone\'s account, it is a scam and will give them access to your account.',
+      'font-size: 20px;'
+    );
+
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
